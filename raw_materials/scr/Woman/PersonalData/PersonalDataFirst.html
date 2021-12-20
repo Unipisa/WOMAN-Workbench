@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type
+content=text/html; charset=iso-8859-1>
+<meta name=GENERATOR>
+<title></title>
+</head>
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+	function tabFunction(page1,page2) {
+		parent.TabFrame.location.href = page1; 
+		parent.FolderFrame.location.href = page2;
+	};
+
+	function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+//-->
+</script>
+
+<body BACKGROUND=../../Pictures/Stampati.jpg BGCOLOR=#000000 
+	style = "margin-top:0px; MARGIN-BOTTOM:0px; margin-left:0px;">
+
+<DIV ALIGN=CENTER>
+
+<TABLE	BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=100%>
+    <TR>
+
+	<TD VALIGN=BOTTOM>
+	<IMG SRC = "../../Pictures/Line.jpg"></TD>
+
+	<TD VALIGN=BOTTOM>
+	<IMG SRC = "../../Pictures/PersonalData1.jpg" BORDER=0 NAME=PersonalData></TD>
+
+	<TD VALIGN=BOTTOM>
+		<A HREF=javascript:tabFunction('../Visit/VisitFirst.html','../Visit/GeneralVisit.html')
+			onMouseOver =	javascript:Show('../../Pictures/Visit3.jpg','Visit')
+			onMouseOut =	javascript:Show('../../Pictures/Visit2.jpg','Visit')>
+			<IMG NAME=Visit SRC = "../../Pictures/Visit2.jpg"  border=0 
+			alt = "VISIT OF THE PATIENT"></a></TD>
+
+	<TD VALIGN=BOTTOM>
+		<A HREF=javascript:tabFunction('../History/HistoryFirst.html','../History/FamilyHistory.html')
+			onMouseOver =	javascript:Show('../../Pictures/History3.jpg','History')
+			onMouseOut =	javascript:Show('../../Pictures/History2.jpg','History')>
+			<IMG NAME=History SRC = "../../Pictures/History2.jpg"  border=0 
+			alt = "FAMILY AND PERSONAL HISTORY"></a></TD>
+
+	<TD VALIGN=BOTTOM>
+		<A HREF=javascript:tabFunction('../Symptoms/SymptomsFirst.html','../Symptoms/Symptoms1.html')
+			onMouseOver =	javascript:Show('../../Pictures/Symptoms3.jpg','Symptoms')
+			onMouseOut =	javascript:Show('../../Pictures/Symptoms2.jpg','Symptoms')>
+			<IMG NAME=Symptoms SRC = "../../Pictures/Symptoms2.jpg"  border=0 
+			alt = "SYMPTOMS OF THE PATIENT"></a></TD>
+
+	<TD VALIGN=BOTTOM>
+		<A HREF=javascript:tabFunction('../Exam/ExamFirst.html','../Exam/GynecologicalExam.html')
+			onMouseOver =	javascript:Show('../../Pictures/Exam3.jpg','Exam')
+			onMouseOut =	javascript:Show('../../Pictures/Exam2.jpg','Exam')>
+			<IMG NAME=Exam SRC = "../../Pictures/Exam2.jpg"  border=0 
+			alt = "PATIENT'S EXAMS"></a></TD>
+
+	<TD VALIGN=BOTTOM>
+	<IMG SRC = "../../Pictures/Line2.jpg"></TD>
+
+	</TR>
+</TABLE>
+
+</DIV>
+
+</BODY>
+</HTML>

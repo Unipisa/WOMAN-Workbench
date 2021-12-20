@@ -1,0 +1,439 @@
+<html>
+
+<head>
+<meta http-equiv="Content-TYPE"
+content="text/html; charset=iso-8859-1">
+<title>Woman-Insert</title>
+
+<script LANGUAGE="JavaScript">
+
+<!--
+
+function validate(field, valid, NameObj) {
+var ok = "yes";
+var temp;
+for (var i=0; i<field.value.length; i++) {
+	temp = "" + field.value.substring(i, i+1);
+	if (valid.indexOf(temp) == "-1") ok = "no";
+	};
+if (ok == "no") {	alert("Attention, Check "+NameObj);
+					field.focus();
+					field.select();
+   					};
+};
+
+
+function CheckAndSubmit(formobj){
+var error = "";		
+	if (formobj.Name.value == "" ) { error = error + " you forgot Name," };
+	if (formobj.Surname.value == "" ) { error = error + " you forgot Surname,"};
+	if (formobj.Month.value == "" ) { error = error + " you forgot Month in 'date of birth',"};
+	if (formobj.Day.value == "" ) { error = error + " you forgot Day in 'date of birth',"};
+	if (formobj.Year.value == "" ) { error = error + " you forgot Year in 'date of birth',"};
+	if (formobj.Month.value > 12) {error = error + " check Month in 'date of birth', "};
+	if (formobj.Day.value > 31) {error = error + " check Day in 'date of birth', "};
+	if (formobj.Year.value < 1880) {error = error + " check Year in 'date of birth', "};
+	if (formobj.Age.value == "" ) { error = error + " you forgot 'Age'," };
+	if (formobj.Age.value > 130 ) { error = error + " check 'Age'," };
+	if (formobj.Address.value == "" ) { error = error + " you forgot 'Address'," };
+	if (formobj.City.value == "" ) { error = error + " you forgot 'City'," };
+	if (formobj.Zip_Code.value == "" ) { error = error + " you forgot 'Zip Code'," };
+	if (formobj.Tel.value == "" ) { error = error + " you forgot 'Tel'," };
+	if (formobj.Status.value == "" ) { error = error + " you forgot 'Status'," };
+	if (formobj.Occupation.value == "" ) { error = error + " you forgot 'Occupation'," };
+	if (formobj.Degree.value == "" ) { error = error + " you forgot 'Degree'," };
+	if (formobj.Social_Security_Number.value == "" ) {error=error+" you forgot 'Social_Security_Number'," };
+	if (formobj.Gen_Pract.value == "" ) { error = error + " you forgot 'General Practitioner'," };
+	if (formobj.Fiscal_Code.value == "" ) { error = error + " you forgot 'Fiscal Code'." };
+	
+	if (error != "") { 	alert("Attention: \r "+error)	}
+	else	{ formobj.submit() };
+};
+
+function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+// -->
+
+</script>
+
+</head>
+
+<body onLoad="document.Folder.Name.focus()" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#ffffff" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'MS Sans Serif'; margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="center">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%" 
+		BORDERCOLOR="#787878" BORDERCOLORDARK="#C6C6C6" BORDERCOLORLIGHT="#C6C6C6" >
+
+<TD bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="Folder">
+
+
+<!- ***************************************************** ->
+<!- *                          TABELLA ->                      
+<!- ***************************************************** ->
+
+	<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" width="95%">
+	<TR>
+	<TD width="50%">
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Name
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Name"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+									'Name')">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Surname
+				</FONT>
+				</DIV>
+			</TD>
+          <TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Surname"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+									'Surname')">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Date of Birth
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="48%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Month"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789',
+									'Date of birth (Month)')">
+
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				/
+				</FONT>				
+
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Day"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789',
+									'Date of birth (Day)')">
+				
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				/
+				</FONT>				
+
+				<INPUT TYPE="text" SIZE="4" MAXLENGTH="4" NAME="Year"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789',
+									'Date of birth (Year)')">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Age
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="3" MAXLENGTH="3" NAME="Age"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789',
+									'Age')">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Address
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="50" NAME="Address"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/-()',
+									'Address')">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				City
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="City"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/-()',
+									'City')">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="21%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Zip Code
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="6" MAXLENGTH="6" NAME="Zip_Code"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Tel.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="14" MAXLENGTH="14" NAME="Tel"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789 /-()',
+									'Tel')">
+				</DIV>
+			</TD>
+		</TABLE>
+
+	</TD>	
+
+<!- seconda colonna ->
+
+	<TD width="50%">
+
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TR>
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Status
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Status"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+									'Status')">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Occupation
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Occupation"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789°abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/-()',
+									'Occupation')">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Degree
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Degree"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+			</TR>
+			</TABLE>
+
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Soc. sec. numb.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="12" MAXLENGTH="12" NAME="Social_Security_Number"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+			</TABLE>
+
+		<DIV ALIGN="LEFT">
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TR>
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Gen.Pract.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="50" NAME="Gen_Pract"
+				STYLE="font-family:'Courier New'; font-size:11px;"
+				onBlur="validate(	this, 
+									'0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ/-()',
+									'Gen.Pract.')">
+				</DIV>
+			</TD>
+
+			</TR>
+          	</TABLE>
+       </DIV>
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TR>
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Referred by
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<SELECT NAME="Referred_by" 
+				STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="NotAtAll">Gen. Practitioner</OPTION>
+					<OPTION VALUE="ALittle">Gynecologist</OPTION>
+					<OPTION VALUE="QuiteABite">Other Specialist</OPTION>
+					<OPTION VALUE="Extremely">Acquaitances & Friends</OPTION>
+					<OPTION VALUE="Extremely">Media</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+			</TR>
+          	</TABLE>
+
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="28%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Fiscal Code
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="16" MAXLENGTH="16" NAME="Fiscal_Code"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+          	</TABLE>
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="30">
+			<TD WIDTH="75%">
+				&nbsp;
+			</TD>
+			<TD> 
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Block
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Block"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+          	</TABLE>			
+
+		</TD>
+		</TR>
+	</TABLE>
+
+	<HR>
+
+    <DIV ALIGN="center">
+	<TABLE BORDER=0 cellpadding="0" CELLSPACING="0">
+        <TR>
+
+		<TD>
+		<A HREF="javascript:CheckAndSubmit(document.Folder)"
+		onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')"
+		onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.jpg','Submit')"
+		onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.jpg','Submit')"
+		onMouseUp=		"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')">
+		<img name="Submit" src="../../Pictures/SubmitMouseOut.jpg" BORDER=0 alt="SUBMIT"></A></TD>
+
+		<TD>
+			&nbsp;
+		</TD>
+
+       <TD>
+		<A HREF="#"
+			onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')"
+			onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.jpg','Cancel')"
+			onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.jpg','Cancel')"
+			onMouseUp=		"reset('Folder'); javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')">
+			<img name="Cancel" src="../../Pictures/CancelMouseOut.jpg" BORDER=0 alt="CANCEL"></A></TD>
+        </TR>
+
+    </TABLE>
+    </DIV>
+
+</FORM>
+</TD>
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>
+

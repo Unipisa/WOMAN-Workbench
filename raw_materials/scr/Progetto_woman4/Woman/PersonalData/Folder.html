@@ -1,0 +1,388 @@
+<html>
+
+<head>
+<meta http-equiv="Content-TYPE"
+content="text/html; charset=iso-8859-1">
+<title>Woman-Insert</title>
+
+<script LANGUAGE="JavaScript">
+<!--
+	
+	function controllodati(formobj){
+	var error = "";
+		
+	if (formobj.Name.value == "" ) { error = error + " you forgot Name," };
+	if (formobj.Name.Validation == "TRUE") {error = error + "error writing name,"};
+	if (formobj.Surname.value == "" ) { error = error + " you forgot Surname,"};
+	if (error != "") { 	alert("Attention: \r "+error)
+			     			return false };
+	};
+
+	function setfocus() {
+	document.Folder.Name.focus();
+	return;
+	};
+
+
+	function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+// -->
+</script>
+
+</head>
+
+<body onLoad="setfocus()" bgcolor="#000000" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#000000" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'Courier New'; margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="center">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%"
+		BORDERCOLORDARK="#A89890" BORDERCOLORLIGHT="#A89890" >
+
+<TD height="100%" 
+		bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="Folder">
+
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE ->                         
+<!- ***************************************************** ->
+
+
+<CENTER>
+	<FONT COLOR="#FF43FD" SIZE="4" FACE="Book Antiqua">
+		WOMAN CLINICAL FILES
+	</FONT>
+	<FONT COLOR="#006666" SIZE="4" FACE="Book Antiqua">
+	- <U>Insert</U>
+	<BR>
+	<BR>
+	</FONT>
+</CENTER>
+
+
+<!- ***************************************************** ->
+<!- *                          TABELLA ->                      
+<!- ***************************************************** ->
+
+<DIV ALIGN="center">
+	<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" width="657">
+	<TR>
+	<TD width="657">
+		<DIV ALIGN="center">
+		<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+       	<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				NAME
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" s-data-type="String"
+    			b-allow-letters="TRUE" b-allow-digits="TRUE"
+    			b-allow-whitespace="TRUE" b-value-required="TRUE" -->
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Name"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				SURNAME
+				</FONT>
+				</DIV>
+			</TD>
+          <TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="30"-->
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Surname"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				AGE
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="3"-->
+				<INPUT TYPE="text" SIZE="3" MAXLENGTH="3" NAME="Age"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+		</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				DATE OF B.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="2"-->
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Month"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="2"-->
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Day"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="4"-->
+				<INPUT TYPE="text" SIZE="4" MAXLENGTH="4" NAME="Year"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				ADDR.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="50"-->
+				<INPUT TYPE="text" SIZE="50" MAXLENGTH="50" NAME="Address"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+			</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				CITY
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="30"-->
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="City"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				ZIP CODE
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="6"-->
+				<INPUT TYPE="text" SIZE="6" MAXLENGTH="6" NAME="Zip_Code"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				TEL.
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="14"-->
+				<INPUT TYPE="text" SIZE="14" MAXLENGTH="14" NAME="Tel"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+			</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				STATUS
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-minimum-length="1" i-maximum-length="1" -->
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Status"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				OCCUPATION
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-minimum-length="2" i-maximum-length="2" -->
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Occupation"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				DEGREE
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-minimum-length="1" i-maximum-length="1" -->
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Degree"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				SOCIAL SECURITY NUMBER
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="16"-->
+				<INPUT TYPE="text" SIZE="16" MAXLENGTH="16" NAME="SocialSecurityNumber"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+          	</TABLE>
+       </DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				GENERAL PRACTITIONER
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="50"-->
+				<INPUT TYPE="text" SIZE="50" MAXLENGTH="50" NAME="GenPract"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD> 
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				BLOCK
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="1"-->
+				<INPUT TYPE="text" SIZE="1" MAXLENGTH="1" NAME="Block"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+          	</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				REFERRED BY
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+				i-maximum-length="50"-->
+				<INPUT TYPE="text" SIZE="50" MAXLENGTH="50" NAME="Referredby"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+			</TABLE>
+		</DIV>
+		</TD>
+		</TR>
+	</TABLE>
+</DIV>
+
+	<HR>
+
+    <DIV ALIGN="center">
+	<TABLE BORDER="0" cellpadding="4" CELLSPACING="0">
+        <TR>
+          	<TD>
+		<A HREF="javascript:Folder.submit()"
+			onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.gif','Submit')"
+			onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.gif','Submit')"
+			onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.gif','Submit')"
+			onMouseUp=		"Folder.submit(); javascript:Show('../../Pictures/SubmitMouseOn.gif','Submit')">
+			<img name="Submit" src="../../Pictures/SubmitMouseOut.gif"  border="0" alt="SUBMIT"></a>
+			</TD>
+          <TD>
+		<A HREF="#"
+			onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.gif','Cancel')"
+			onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.gif','Cancel')"
+			onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.gif','Cancel')"
+			onMouseUp=		"reset('Folder'); javascript:Show('../../Pictures/CancelMouseOn.gif','Cancel')">
+			<img name="Cancel" src="../../Pictures/CancelMouseOut.gif" border="0" alt="CANCEL"></A>
+			</TD>
+        </TR>
+    </TABLE>
+    </DIV>
+
+</FORM>
+</TD>
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>
+

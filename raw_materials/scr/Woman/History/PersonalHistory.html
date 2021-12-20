@@ -1,0 +1,639 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-TYPE" content="text/html; charset=iso-8859-1">
+<TITLE>WOMAN - Personal history</TITLE>
+</HEAD>
+
+<script language="JavaScript">
+<!--
+
+function Jump(url)
+{
+  if (url == 'backward')
+    history.back(1);
+  else {
+		if (history.forward(1))
+    		history.forward(1);
+  		else parent.FolderFrame.location.href = url
+		}
+};
+
+function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+};
+
+function TestChar(TA)
+	{
+	SpcRemain = (500 - TA.value.length);
+
+	if ( SpcRemain < 0 ) {
+			TA.value = TA.value.substring(0,500);
+			SpcRemain = 0;
+			window.status = "Space remaining: 0 chars";
+			alert("ATTENTION: No more free space!");
+			};
+	window.status = "Space remaining: "+SpcRemain+" chars";
+	};
+
+//-->
+</Script>
+
+
+
+<body onLoad="document.PersonalHistory.Gynaecological_Diseases[0].focus()" 
+		BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#FFFFFF" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'MS Sans Serif'; 
+		margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN = CENTER>
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%" 
+		BORDERCOLOR="#8C8C8C" bordercolordark="#C6C6C6" bordercolorlight="#C6C6C6">
+
+<FORM ACTION="http://YourCGIScript" method="POST" name="PersonalHistory">
+
+<TD WIDTH="100%" height="100%" 
+		bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE ->                         
+<!- ***************************************************** ->
+
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=29>
+	<TD ALIGN=CENTER VALIGN=TOP>
+	<FONT COLOR="#FFFFFD" SIZE="2" FACE="Arial">
+		NOME E COGNOME DEL PAZIENTE
+	</FONT>
+	</TD>
+	</TABLE>
+
+<DIV ALIGN = CENTER>
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="95%" >
+	<TR>
+	<TD>
+
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+		<TR>
+
+		<!- PRIMA COLONNA ->
+
+		<TD WIDTH="49%">
+
+<!- PRIMA RIGA DELLA PRIMA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Gynaecological Diseases
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Gynaecological_Diseases" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Gynaecological_Diseases" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Gynecological_Diseases_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- SECONDA RIGA DELLA PRIMA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Gynaecological Cancer
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Gynaecological_Cancer" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Gynaecological_Cancer" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Gynecological_Cancer_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+
+
+<!- TERZA RIGA DELLA PRIMA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Breast Diseases
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Breast_Diseases" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Breast_Diseases" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Breast_Diseases_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- QUARTA RIGA DELLA PRIMA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Breast Cancer
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Breast_Cancer" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Breast_Cancer" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Breast_Cancer_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- QUINTA RIGA DELLA PRIMA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Diabetes
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Diabetes" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Diabetes" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Diabetes_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</TEXTAREA>
+					</DIV>
+				</TD>
+			</TABLE>
+
+
+			</TD>
+
+
+		<!- SECONDA COLONNA (VUOTA) ->
+
+		<TD WIDTH="2%">
+			&nbsp;</TD>
+
+
+		<!- TERZA COLONNA ->
+
+			<TD WIDTH="49%">
+
+<!- PRIMA RIGA DELLA TERZA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Cardiovascular Diseases
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Cardiovascular_Diseases" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Cardiovascular_Diseases" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Cardiovascular_Diseases_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- SECONDA RIGA DELLA TERZA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Hypertension
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Hypertension" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Hypertension" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Hypertension_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+<!- TERZA RIGA DELLA TERZA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Osteoporosis
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Osteoporosis" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Osteoporosis" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Osteoporosis_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- QUARTA RIGA DELLA TERZA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Tromboembolism
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Tromboembolism" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Tromboembolism" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Tromboembolism_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+<!- QUINTA RIGA DELLA TERZA COLONNA ->
+
+			<TABLE BORDER= 0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%" 
+			WIDTH=100% height=50 bordercolorlight="#C6C6C6">
+				<TD WIDTH="30%">
+				<DIV ALIGN="left" style="font-family:'MS Sans Serif'; font-size:11px;">
+					Thyroid disease
+				</DIV>
+				</TD>
+				<TD WIDTH="20%">
+					<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+							Yes
+						</DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Thyroid_disease" VALUE="Yes">
+					</TD>
+					</TR>
+					<TR>
+					<TD VALIGN="middle">
+						<DIV ALIGN = LEFT style="font-family:'MS Sans Serif'; font-size:11px;">
+						No
+						<DIV>
+					</TD>
+					<TD VALIGN="middle">
+						<INPUT TYPE="RADIO" NAME="Thyroid_disease" VALUE="NO">
+					</TD>				
+					</TABLE>
+					</TR>
+				</TD>
+				<TD WIDTH="50%">
+					<DIV ALIGN = LEFT>
+					<TEXTAREA NAME="Thyroid_disease_Note" WRAP="hard" ROWS="2" COLS="20" 
+						STYLE="font-family:'Courier New'; font-size:11px;"
+						onKeyUp="javascript:TestChar(this)"
+						onMouseOver="javascript:TestChar(this)"
+						onMouseOut="javascript:window.status=''"></textarea>
+					</DIV>
+				</TD>
+			</TABLE>
+
+		</TD>
+		</TR>
+		</TABLE>
+
+<HR>
+
+
+<!--
+         _______________________________________________
+        |                                               |
+        |           PULSANTI DI NAVIGAZIONE ...         |
+        |_______________________________________________|
+
+-->
+
+   	<CENTER>
+	<TABLE BORDER="0" cellpadding="0" CELLSPACING="0" WIDTH="100%">
+	<TR>
+		<TD WIDTH="27%" ALIGN="CENTER">
+			&nbsp;
+		</TD>
+
+       <TD WIDTH="10%" ALIGN="CENTER">
+		<A HREF="javascript:Jump('backward')"
+		onMouseOver=	"javascript:Show('../../Pictures/BackMouseOn.jpg','Back')"
+		onMouseOut=	"javascript:Show('../../Pictures/BackMouseOut.jpg','Back')"
+		onMouseDown=	"javascript:Show('../../Pictures/BackMouseClicked.jpg','Back')"
+		onMouseUp=		"javascript:Show('../../Pictures/BackMouseOn.jpg','Back')">
+	   <img name="Back" src="../../Pictures/BackMouseOut.jpg" BORDER="0" alt="BACK TO PREVIOUS PAGE"></A>
+		</TD>
+
+		<TD WIDTH="2%" ALIGN="CENTER">
+			&nbsp;
+		</TD>
+
+		<TD width="10%" ALIGN="CENTER">
+		<A HREF="javascript:document.PersonalHistory.submit()"
+		onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')"
+		onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.jpg','Submit')"
+		onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.jpg','Submit')"
+		onMouseUp=		"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')">
+		<img name="Submit" src="../../Pictures/SubmitMouseOut.jpg" BORDER="0" alt="SUBMIT"></A>
+		</TD>
+
+		<TD WIDTH="2%">
+			&nbsp;
+		</TD>
+
+		<TD width="10%" ALIGN="CENTER">
+		<A HREF="#"
+		onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')"
+		onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.jpg','Cancel')"
+		onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.jpg','Cancel')"
+		onMouseUp=		"javascript:document.PersonalHistory.reset();
+						 javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')">
+		<img name="Cancel" src="../../Pictures/CancelMouseOut.jpg" BORDER="0" alt="CANCEL"></A>
+		</TD>
+
+		<TD WIDTH="2%">
+			&nbsp;
+		</TD>
+
+		<TD WIDTH="10%" ALIGN="CENTER">
+		<A HREF="javascript:Jump('PersonalHistory2.html')" 
+		onMouseOver=	"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')"
+		onMouseOut=	"javascript:Show('../../Pictures/NextMouseOut.jpg','Next')"
+		onMouseDown=	"javascript:Show('../../Pictures/NextMouseClicked.jpg','Next')"
+		onMouseUp=		"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')">
+		<img name="Next" src="../../Pictures/NextMouseOut.jpg" border="0" alt="NEXT PAGE"></A>
+		</TD>
+		
+		<TD WIDTH="27%" ALIGN="RIGHT">
+				<FONT COLOR="yellow" STYLE="font-family:'Book Antiqua'; font-size:11px;">
+					PERS. HISTORY - 1
+				</FONT>
+		</TD>
+
+	</TR>
+	</TABLE>
+	</CENTER>
+
+	</TD>
+	</TR>
+</TABLE>
+</DIV>
+
+
+</TD>
+
+</TABLE>
+
+</TABLE>
+</DIV>
+
+</BODY>
+
+
