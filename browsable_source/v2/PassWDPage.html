@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+
+<HEAD>
+<TITLE>Woman Project - Password Page</TITLE>
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.9">
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.9">
+</HEAD>
+
+<script language="JavaScript">
+<!--
+
+function Jump(url)
+{
+  if (url == 'backward')
+    history.back(1);
+  else {
+		if (history.forward(1))
+    		history.forward(1);
+  		else parent.location.href = url
+		}
+};
+
+	function setfocus() {
+	document.LoginPassword.UserId.focus();
+	return;
+	}; 
+
+	function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+//-->
+</Script>
+
+<BODY BACKGROUND="../Pictures/Stampati.jpg" TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff8000" 
+		BGCOLOR="#000000">
+
+<DIV ALIGN="CENTER">
+
+<FORM ACTION="http://woman.di.unipi.it/servlet/WomanManager" method="POST" NAME="LoginPassword">
+
+<TABLE  WIDTH="100%" HEIGHT="100" BORDER="0">
+	<TR>
+		<TD VALIGN="MIDDLE" ALIGN="RIGHT">
+		<IMG SRC="../Pictures/LOGOWO~1.gif" WIDTH="130" HEIGHT="80" ALT="">
+		</TD>
+	</TR>
+</TABLE>
+
+<body onLoad="setfocus()" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#000000" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'Courier New';>
+
+<TABLE WIDTH="100%" HEIGHT="300" BORDER="0">
+<TD VALIGN="MIDDLE" ALIGN="CENTER">
+
+<TABLE BACKGROUND="../Pictures/Denim.jpg" BORDER="6" 
+	BORDERCOLORDARK="#A89890" BORDERCOLORLIGHT="#A89890" WIDTH="60%" HEIGHT="60%" >
+<TD VALIGN="MIDDLE" ALIGN="CENTER" 
+	BORDERCOLORDARK="#A89890" BORDERCOLORLIGHT="#A89890">
+
+<p>&nbsp;</p>
+                    
+				<DIV ALIGN="center">
+				<b><FONT STYLE="font-family:'Courier New'; font-size:16px;">
+				Please enter your:
+				</FONT></b></DIV>
+                        <br><br> 
+
+
+  	<TABLE  WIDTH="80%" HEIGHT="80%" BORDER="0">
+			<TR>
+			<TD>   
+				<DIV ALIGN="LEFT">
+				<b><FONT STYLE="font-family:'Courier New'; font-size:16px;">
+				Login
+				</FONT></b>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="20" MAXLENGTH="6" NAME="UserId"
+				STYLE="font-family:'Courier New'; font-size:16px;">
+				</DIV>
+			</TD>
+			</TR>
+
+			<TR>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<b><FONT STYLE="font-family:'Courier New'; font-size:16px;">
+				Password
+				</FONT></b>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="PASSWORD" SIZE="20" MAXLENGTH="20" NAME="PassWd"
+				STYLE="font-family:'Courier New'; font-size:16px;">
+				</DIV>
+			</TD>
+			</TR>
+
+<!--
+         _______________________________________________
+        |                                               |
+        |    PULSANTI DI 'EXIT', 'RESET', 'SUBMIT'      |
+        |_______________________________________________|
+
+-->
+
+   	<TD COLSPAN="2" HEIGHT="100" ALIGN="CENTER" VALIGN="MIDDLE">
+
+	<TABLE BORDER="0" cellpadding="4" CELLSPACING="0">
+	<TR>
+
+		<TD>
+		<A HREF="javascript:Jump('Main.html')" 
+		onMouseOver=	"javascript:Show('../Pictures/ExitMouseOn.gif','Exit')"
+		onMouseOut=	"javascript:Show('../Pictures/ExitMouseOut.gif','Exit')"
+		onMouseDown=	"javascript:Show('../Pictures/ExitMouseClicked.gif','Exit')"
+		onMouseUp=		"javascript:Show('../../Pictures/ExitMouseOn.gif','Exit')">
+		<img name="Exit" src="../Pictures/ExitMouseOut.gif" border="0" alt="EXIT"></A>
+		</TD>
+		<TD>
+		<A HREF="#"
+		onMouseOver=	"javascript:Show('../Pictures/CancelMouseOn.gif','Cancel')"
+		onMouseOut=	"javascript:Show('../Pictures/CancelMouseOut.gif','Cancel')"
+		onMouseDown=	"javascript:Show('../Pictures/CancelMouseClicked.gif','Cancel')"
+		onMouseUp="reset('LoginPassword'); javascript:Show('../Pictures/CancelMouseOn.gif','Cancel')">
+		<img name="Cancel" src="../Pictures/CancelMouseOut.gif" BORDER="0" alt="CANCEL"></A>			
+		</TD>
+		<TD>
+		<A HREF="javascript:LoginPassword.submit()"
+		onMouseOver=	"javascript:Show('../Pictures/SubmitMouseOn.gif','Submit')"
+		onMouseOut=	"javascript:Show('../Pictures/SubmitMouseOut.gif','Submit')"
+		onMouseDown=	"javascript:Show('../Pictures/SubmitMouseClicked.gif','Submit')"
+		onMouseUp=		"javascript:LoginPassword.submit();
+						javascript:Show('../Pictures/SubmitMouseOn.gif','Submit')">
+		<img name="Submit" src="../Pictures/SubmitMouseOut.gif" BORDER="0" alt="SUBMIT"></A>
+		</TD>
+
+	</TR>
+	</TABLE>
+	</TD>
+
+	</TABLE>
+
+</TD>
+</TABLE>
+
+</TD>
+</TABLE>
+</FORM>
+
+</DIV>
+</BODY>
+
+</HTML>

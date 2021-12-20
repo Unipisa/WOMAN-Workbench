@@ -1,0 +1,164 @@
+<HTML>
+
+<HEAD>
+<TITLE>SearchFrame.html</TITLE>
+
+<script LANGUAGE="JavaScript">
+<!--
+	function setfocus() {
+	document.Modify.Name.focus();
+	return;
+	} 
+
+// -->
+</script>
+
+</HEAD>
+
+<body onLoad="setfocus()" bgcolor="#000000" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#000000" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'Courier New'; margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="center">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%"
+		bordercolordark="#A89890" bordercolorlight="#A89890" >
+
+<TD WIDTH="90%" height="100%" 
+		bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="Modify">
+
+
+<CENTER>
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE             * ->            
+<!- ***************************************************** ->
+
+<FONT COLOR="#FF43FD" SIZE="4" FACE="Book Antiqua">
+WOMAN CLINICAL FILES
+</FONT>
+
+<FONT COLOR="#006666" SIZE="4" FACE="Book Antiqua">
+- <U>Modify</U>
+<BR>
+<BR>
+</FONT>
+
+<!- ***************************************************** ->
+<!- *                            TABELLA                * ->                
+<!- *                           PER I DATI              * ->                  
+<!- ***************************************************** ->
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING ="0">
+<TR>
+<TD>
+	<TABLE  border="1" cellspacing="0" cellpadding="0" WIDTH="100%">
+	<TR>
+		<!-- Row 1 Column 1 -->
+		<TD WIDTH="80">
+			<P ALIGN="left">
+			<FONT style="font-family:'Courier New'; font-size:16px;">
+				Name
+			</FONT>
+			</P>
+		</TD>
+		<!-- Row 1 Column 2 -->
+                    <TD>
+				<P ALIGN="left">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+					i-maximum-length="30"-->
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Name"
+				style="font-family:'Courier New'; font-size:13px;">
+				</P>
+                    </TD>
+	</TR>
+	</TABLE>
+	<TABLE  border="1" cellspacing="0" cellpadding="0" WIDTH="100%">
+	<TR>
+		<!-- Row 2 Column 1 -->
+		<TD WIDTH="80">
+			<P ALIGN="left">
+			<FONT style="font-family:'Courier New'; font-size:16px;">
+				Surname
+			</FONT>
+			</P>
+		</TD>
+		<!-- Row 2 Column 2 -->
+                    <TD>
+				<P ALIGN="left">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+					i-maximum-length="30"-->
+				<INPUT TYPE="text" SIZE="30" MAXLENGTH="30" NAME="Surname"
+				style="font-family:'Courier New'; font-size:13px;">
+				</P>
+                    </TD>
+	</TR>
+	</TABLE>
+	<TABLE  border="1" cellspacing="0" cellpadding="0" WIDTH="100%">
+	<TR>
+		<!-- Row 3 Column 1 -->
+		<TD WIDTH="140">
+			<P ALIGN="left">
+			<FONT style="font-family:'Courier New'; font-size:16px;">
+				Date of Birth
+			</FONT>
+			</P>
+		</TD>
+		<!-- Row 3 Column 2 -->
+                    <TD>
+				<P ALIGN="left">
+				<!--webbot bot="Validation" b-value-required="TRUE"
+					i-maximum-length="2"-->
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Month"
+				style="font-family:'Courier New'; font-size:13px;">
+				/
+				<!--webbot bot="Validation" b-value-required="TRUE"
+					i-maximum-length="2"-->
+				<INPUT TYPE="text" SIZE="2" MAXLENGTH="2" NAME="Day"
+				style="font-family:'Courier New'; font-size:13px;">
+				/
+				<!--webbot bot="Validation" b-value-required="TRUE"
+					i-maximum-length="4"-->
+				<INPUT TYPE="text" SIZE="4" MAXLENGTH="4" NAME="Year"
+				style="font-family:'Courier New'; font-size:13px;">
+				</P>
+                    </TD>
+	</TR>
+	</TABLE>
+</TD>
+</TR>
+</TABLE>
+
+<HR>
+
+<!- ***************************************************** ->
+<!- *                            TABELLA                                  * ->
+<!- *                      PER I PULSANTI                            * ->
+<!- ***************************************************** ->
+
+<TABLE  border="0" cellspacing="0" cellpadding="4">
+	<TR>
+		<!-- Row 1 Column 1 -->
+		<TD >
+			<INPUT TYPE ="submit" NAME="Submit" VALUE="SUBMIT">
+		</TD>
+		<TD >
+			<INPUT TYPE ="submit" NAME="Cancel" VALUE="CANCEL">
+		</TD>
+	</TR>
+</TABLE>
+
+</CENTER>
+</FORM>
+
+</TD>
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>

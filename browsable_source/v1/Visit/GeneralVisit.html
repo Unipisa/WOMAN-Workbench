@@ -1,0 +1,507 @@
+<html>
+
+<head>
+<meta http-equiv="Content-TYPE"
+content="text/html; charset=iso-8859-1">
+</meta>
+<title>Woman-Insert</title>
+</head>
+
+<script language="JavaScript">
+<!--
+
+function Jump(url)
+{
+  if (url == 'backward')
+    history.back(1);
+  else {
+		if (history.forward(1))
+    		history.forward(1);
+  		else parent.FolderFrame.location.href = url
+		}
+};
+
+	function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+//-->
+</Script>
+
+
+
+<body onLoad="document.GeneralVisit.Month.focus()" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#FFFFFF" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'MS Sans Serif'; margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="CENTER">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%" 
+		BORDERCOLOR="#8C8C8C" bordercolordark="#C6C6C6" bordercolorlight="#C6C6C6" >
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="GeneralVisit">
+
+<TD WIDTH="90%" height="100%" bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE ->                         
+<!- ***************************************************** ->
+
+
+
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=24>
+	<TD ALIGN=CENTER valign=top>
+	<FONT COLOR="#FFFFFD" SIZE="2" FACE="Arial">
+		NOME E COGNOME DEL PAZIENTE
+	</FONT>
+	</TD>
+	</TABLE>
+
+
+
+
+<!- ***************************************************** ->
+<!- *                          TABELLA ->                      
+<!- ***************************************************** ->
+
+<DIV ALIGN="center">
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="95%">
+	<TR>
+
+<!- PRIMA COLONNA ->
+
+<TD WIDTH="60%">
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+       	<TR>
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Menarche
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Month"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				/
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Day"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				/
+				<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Year"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Menstrual cycle
+				</FONT>
+				</DIV>
+			</TD>
+          <TD>
+				<DIV ALIGN="LEFT" STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				<SELECT NAME="Cycle_at_30_Years" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="Regular">REGULAR</OPTION>
+					<OPTION VALUE="Irregular">IRREGULAR</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Dysmenorrea
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT" STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				<SELECT NAME="Dysmenorrhea" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Breast feedig (months)
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="9%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Breast_Feeding"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+			<TD WIDTH="10%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Parity
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Parity"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Smoking years
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Smoking_Years"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				N° cigarettes/day
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="N°_Cigarette_/_Day"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Alcohol
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT" STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				<SELECT NAME="Cod_Alcohol" 
+				STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Coffee
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<SELECT NAME="Cod_Coffee" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD WIDTH="34%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Pill
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="32%">
+				<DIV ALIGN="LEFT">
+				<SELECT NAME="Cod_Pill" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+			<TD WIDTH="10%">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Years
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Years"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+
+</TD>
+
+
+<!- SECONDA COLONNA ->
+
+	<TD WIDTH="40%">
+
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD> 
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Weight
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Weight"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD> 
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Height
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Height"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD> 
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Waist
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Waist"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD> 
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Hip
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Hip"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Blood pres. Max/Min
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Blood_Pressure_MAX"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				/
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Blood_Pressure_MIN"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Body weight incr. : Kg
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Body_Weight_Inc.(Kg)" 
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Physichal activity
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<SELECT NAME="Physical_Activity" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Hours x week
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="NUMBER" SIZE="2" MAXLENGTH="2" NAME="P.A_Hours/Week"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%" HEIGHT="25">
+			<TD>
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Constipation
+				</FONT>
+				</DIV>
+			</TD>
+			<TD WIDTH="30%">
+				<DIV ALIGN="LEFT">
+				<SELECT NAME="Constipation" STYLE="font-family:'Courier New'; font-size:11px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+		</TABLE>
+
+	</TD>
+	</TR>
+
+<!-	ULTIMA RIGA -- SPAZIO PER DUE COLONNE ->
+
+	<TD COLSPAN="2">
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TD WIDTH="20%" HEIGHT="30">
+				<DIV ALIGN="LEFT">
+				<FONT STYLE="font-family:'MS Sans Serif'; font-size:11px;">
+				Other problems
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="LEFT">
+				<INPUT TYPE="text" SIZE="50" MAXLENGTH="50" NAME="Other_Problems"
+				STYLE="font-family:'Courier New'; font-size:11px;">
+				</DIV>
+			</TD>
+		</TABLE>
+
+	</TD>
+	</TABLE>
+</DIV>
+
+<hr>
+
+   	<CENTER>
+	<TABLE BORDER="0" cellpadding="0" CELLSPACING="0" WIDTH="100%">
+	<TR>
+
+		<TD WIDTH="33%" ALIGN="CENTER">
+			&nbsp;
+		</TD>
+
+		<TD width="10%" ALIGN="CENTER">
+		<A HREF="javascript:document.GeneralVisit.submit()"
+		onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')"
+		onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.jpg','Submit')"
+		onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.jpg','Submit')"
+		onMouseUp=		"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')">
+		<img name="Submit" src="../../Pictures/SubmitMouseOut.jpg" BORDER="0" alt="SUBMIT"></A>
+		</TD>
+
+		<TD WIDTH="2%">
+			&nbsp;
+		</TD>
+
+		<TD width="10%" ALIGN="CENTER">
+		<A HREF="#"
+		onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')"
+		onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.jpg','Cancel')"
+		onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.jpg','Cancel')"
+		onMouseUp=		"javascript:document.GeneralVisit.reset();
+						 javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')">
+		<img name="Cancel" src="../../Pictures/CancelMouseOut.jpg" BORDER="0" alt="CANCEL"></A>
+		</TD>
+
+		<TD WIDTH="2%">
+			&nbsp;
+		</TD>
+
+		<TD WIDTH="10%" ALIGN="CENTER">
+		<A HREF="javascript:Jump('GeneralVisit2.html')" 
+		onMouseOver=	"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')"
+		onMouseOut=	"javascript:Show('../../Pictures/NextMouseOut.jpg','Next')"
+		onMouseDown=	"javascript:Show('../../Pictures/NextMouseClicked.jpg','Next')"
+		onMouseUp=		"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')">
+		<img name="Next" src="../../Pictures/NextMouseOut.jpg" border="0" alt="NEXT PAGE"></A>
+		</TD>
+		
+		<TD WIDTH="33%" ALIGN="RIGHT">
+				<FONT COLOR="yellow" STYLE="font-family:'Book Antiqua'; font-size:11px;">
+				GEN. VISIT -- 1 --
+				</FONT>
+		</TD>
+
+	</TR>
+	</TABLE>
+	</CENTER>
+
+
+
+</TD>
+
+</FORM>
+
+</TABLE>
+
+</DIV>
+
+</BODY>
+</HTML>
+

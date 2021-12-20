@@ -1,0 +1,501 @@
+<html>
+
+<head>
+<meta http-equiv="Content-TYPE"
+content="text/html; charset=iso-8859-1">
+<title>Woman-Visit-general</title>
+
+<script LANGUAGE="JavaScript">
+<!--
+	
+function Jump(url)
+{
+  if (url == 'backward')
+    history.back(1);
+  else {
+		if (history.forward(1))
+    		history.forward(1);
+  		else parent.FolderFrame.location.href = url
+		}
+};
+
+function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+};
+
+function TestChar(TA)
+	{
+	SpcRemain = (500 - TA.value.length);
+
+	if ( SpcRemain < 0 ) {
+			TA.value = TA.value.substring(0,500);
+			SpcRemain = 0;
+			window.status = "Space remaining: 0 chars";
+			alert("ATTENTION: No more free space!");
+			};
+	window.status = "Space remaining: "+SpcRemain+" chars";
+	};
+
+// -->
+</script>
+
+</head>
+
+<body onLoad="document.GynExam1.GynExamNote.focus();" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#FFFFFF" link="blue" vlink="purple" alink="red"
+ 		style="margin-top:-1px; margin-right:0px;	margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="CENTER">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="675" HEIGHT="100%" 
+		BORDERCOLOR="#8C8C8C" bordercolordark="#C6C6C6" bordercolorlight="#C6C6C6" >
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="GynExam1">
+
+<TD height="100%" 
+		bordercolordark="#000000" bordercolorlight="#000000" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE ->                         
+<!- ***************************************************** ->
+
+
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=39>
+	<TD ALIGN=CENTER VALIGN=TOP>
+	<FONT COLOR="#FFFFFD" SIZE="2" FACE="Arial">
+		NOME E COGNOME DEL PAZIENTE
+	</FONT>
+	</TD>
+	</TABLE>
+
+<DIV ALIGN="center">
+	<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" width="95%">
+	<TR>
+	<TD>
+		<DIV ALIGN="center">
+
+<!--     _______________________________________________
+        |                                               |
+        |           Contenuto della pagina              |
+        |_______________________________________________|
+-->
+
+<!--
+	    ------------------------------------------------
+       |           inizio della prima riga             |
+		-------------------------------------------------
+-->
+
+
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TD WIDTH=24%>
+				<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+					Gynecological exam :
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN=LEFT>
+				<TEXTAREA NAME="GynExamNote" WRAP="hard" ROWS="2" COLS=65  
+					STYLE="font-family:'Courier New'; font-size:11px;"
+					onKeyUp="javascript:TestChar(this)"
+					onMouseOver="javascript:TestChar(this)"
+					onMouseOut="javascript:window.status=''"></textarea>
+				</DIV>
+			</TD>
+		</TABLE>
+
+<!--
+		-------------------------------------------------
+		|           fine della prima riga            	|
+		-------------------------------------------------
+-->
+
+<!--
+	    -------------------------------------------------
+       |        inizio della seconda riga              |
+		-------------------------------------------------
+-->
+
+
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TD ALIGN=LEFT width=24%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Pap smear (dd/mm/yy)
+					</DIV>
+			</TD>
+			<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Pap_Smear_Month" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Pap_Smear_Day" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Pap_Smear_Year" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+			</TD>
+
+		<TD ALIGN="CENTER" WIDTH=9%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0">
+				<TR>
+				<TD>
+					<DIV ALIGN="CENTER" STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Positive
+					</DIV>
+				</TD>
+				</TR>
+				<TR>
+				<TD ALIGN="center">
+					<INPUT TYPE="radio" NAME="Pap_Smear" VALUE="YES" >
+				</TD>
+				</TR>
+				</TABLE>
+		</TD>
+
+		<TD ALIGN="CENTER" WIDTH=9%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0">
+				<TR>
+				<TD>
+					<DIV ALIGN="CENTER" STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Negative
+					</DIV>
+				</TD>
+				</TR>
+				<TR>
+				<TD ALIGN="center">
+						<INPUT TYPE="radio" NAME="Pap_Smear" VALUE="NO" >
+				</TD>
+				</TR>
+				</TABLE>
+		</TD>
+
+			<TD>
+				<DIV ALIGN=RIGHT>
+				<TEXTAREA NAME="Pap_Smear_Note" WRAP="hard" ROWS="2" COLS="30"  
+					STYLE="font-family:'Courier New'; font-size:11px;"
+					onKeyUp="javascript:TestChar(this)"
+					onMouseOver="javascript:TestChar(this)"
+					onMouseOut="javascript:window.status=''"></textarea>
+				</DIV>
+			</TD>
+
+		</TABLE>
+
+<!--
+		-------------------------------------------------
+		|           fine della seconda riga            	|
+		-------------------------------------------------
+-->
+
+<!--
+	    -------------------------------------------------
+        |          inizio della terza riga             |
+		 -------------------------------------------------
+-->
+
+
+		<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TD ALIGN=LEFT WIDTH=24%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Colposcopy (dd/mm/yy)
+					</DIV>
+			</TD>
+			<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Colposcopy_Month" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Colposcopy_Day" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Colposcopy_Year" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+			</TD>
+
+		<TD ALIGN=CENTER WIDTH=9%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0">
+				<TR>
+				<TD>
+					<DIV ALIGN=CENTER STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Positive
+					</DIV>
+				</TD>
+				</TR>
+				<TR>
+				<TD ALIGN=CENTER>
+					<INPUT TYPE="radio" NAME="Colposcopy" VALUE="YES" >
+				</TD>
+				</TR>
+				</TABLE>
+		</TD>
+
+		<TD ALIGN=CENTER WIDTH=9%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0">
+				<TR>
+				<TD>
+					<DIV ALIGN="CENTER" STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Negative
+					</DIV>
+				</TD>
+				</TR>
+				<TR>
+				<TD ALIGN="center">
+						<INPUT TYPE="radio" NAME="Colposcopy" VALUE="NO" >
+				</TD>
+				</TR>
+				</TABLE>
+		</TD>
+
+			<TD>
+				<DIV ALIGN=RIGHT>
+				<TEXTAREA NAME="Colposcopy_Note" WRAP="hard" ROWS="2" COLS="30"  
+					STYLE="font-family:'Courier New'; font-size:11px;"
+					onKeyUp="javascript:TestChar(this)"
+					onMouseOver="javascript:TestChar(this)"
+					onMouseOut="javascript:window.status=''"></textarea>
+				</DIV>
+			</TD>
+
+		</TABLE>
+
+<!--
+		-------------------------------------------------
+		|           fine della terza riga            	|
+		-------------------------------------------------
+-->
+
+
+<!--
+		-------------------------------------------------
+       |         spazio centrale   (3 righe)           |
+		-------------------------------------------------
+-->
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%>
+		<TD VALIGN=MIDDLE ALIGN=LEFT WIDTH="26%">
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+				<TR>
+				<TD WIDTH=56%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Pelvic U.S. (dd/mm/yy)
+					</DIV>
+				</TD>
+				<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Pelvic_Month" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Pelvic_Day" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Pelvic_Year" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+				</TD>
+				</TR>
+				</TABLE>
+		</TD>
+<!--
+		-------------------------------------------------
+       |    spazio riservato all'illustrazione         |
+		-------------------------------------------------
+-->
+		<TD VALIGN="middle" ALIGN=RIGHT  WIDTH=35% HEIGHT="132" ROWSPAN=4>
+			<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0">
+			<TD WIDTH="65">
+				<A HREF="javascript:document.GynExam1.r_o_mm_1.focus()"
+					onMouseOver=	"javascript:Show('../../Pictures/R_Ovary_On.jpg','R_Ovary')"
+					onMouseOut=	"javascript:Show('../../Pictures/R_Ovary_Out.jpg','R_Ovary')">
+					<img name="R_Ovary" src="../../Pictures/R_Ovary_Out.jpg" 
+					BORDER=0 alt="RIGHT OVARY"></A></TD>
+
+			<TD WIDTH="69">
+				<A HREF="javascript:document.GynExam1.u_mm_1.focus()"
+					onMouseOver=	"javascript:Show('../../Pictures/Uterus_On.jpg','Uterus')"
+					onMouseOut=	"javascript:Show('../../Pictures/Uterus_Out.jpg','Uterus')">
+					<img name="Uterus" src="../../Pictures/Uterus_Out.jpg" 
+					BORDER=0 alt="UTERUS"></A></TD>
+
+			<TD WIDTH="65">
+				<A HREF="javascript:document.GynExam1.l_o_mm_1.focus()"
+					onMouseOver=	"javascript:Show('../../Pictures/L_Ovary_On.jpg','L_Ovary')"
+					onMouseOut=	"javascript:Show('../../Pictures/L_Ovary_Out.jpg','L_Ovary')">
+					<img name="L_Ovary" src="../../Pictures/L_Ovary_Out.jpg" 
+					BORDER=0 alt="LEFT OVARY"></A></TD>
+
+			</TABLE>
+		</TD>
+<!--
+		-------------------------------------------------
+       | fine dello spazio riservato all'illustrazione |
+		-------------------------------------------------
+-->
+	<TR>
+		<TD VALIGN=MIDDLE ALIGN=RIGHT WIDTH=26%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH=100%>
+				<TR>
+				<TD WIDTH=56%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Uterus
+					</DIV>
+				</TD>
+				<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="u_mm_1" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="u_mm_2" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="u_mm_3" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+				</TD>
+				</TR>
+				</TABLE>
+
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN=MIDDLE ALIGN=RIGHT WIDTH=26%>
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH=100%>
+				<TR>
+				<TD WIDTH=56%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Left Ovary 
+					</DIV>
+				</TD>
+				<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="l_o_mm_1" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="l_o_mm_2" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="l_o_mm_3" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+				</TD>
+				</TR>
+				</TABLE>
+
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN=MIDDLE ALIGN=RIGHT WIDTH="26%">
+				<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="0" WIDTH=100%>
+				<TR>
+				<TD WIDTH=56%>
+					<DIV ALIGN=LEFT STYLE="font-family:'Ms Sans Serif'; font-size:11px;">
+						Right Ovary
+					</DIV>
+				</TD>
+				<TD>
+					<DIV ALIGN=LEFT>
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="r_o_mm_1" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="r_o_mm_2" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					/
+					<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="r_o_mm_3" 
+					STYLE="font-family:'Courier New'; font-size:11px;">
+					</DIV>
+				</TD>
+				</TR>
+				</TABLE>
+
+		</TD>
+		</TR>
+
+
+		</TABLE>
+<!--
+		-------------------------------------------------
+       |          fine dello spazio centrale           |
+		-------------------------------------------------
+-->
+
+
+<!--
+         _______________________________________________
+        |                                               |
+        |         Fine del contenuto della pagina       |
+        |_______________________________________________|
+-->
+
+
+		</DIV>
+	</TD>
+	</TR>
+	</TABLE>
+</DIV>
+
+<hr>
+
+	<TABLE BORDER=0 cellpadding="0" CELLSPACING="0" width="100%">
+		<TD WIDTH=33%>
+			&nbsp;
+		</TD>
+
+		<TD VALIGN="middle" ALIGN="center" WIDTH=10%>
+		<A HREF="javascript:document.GynExam1.submit()"
+		onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')"
+		onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.jpg','Submit')"
+		onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.jpg','Submit')"
+		onMouseUp=		"javascript:Show('../../Pictures/SubmitMouseOn.jpg','Submit')">
+		<img name="Submit" src="../../Pictures/SubmitMouseOut.jpg" BORDER=0 alt="SUBMIT"></A>
+		</TD>
+
+		<TD WIDTH=2%>
+			&nbsp;
+		</TD>
+
+		<TD WIDTH=10%>
+		<A HREF="#"
+		onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')"
+		onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.jpg','Cancel')"
+		onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.jpg','Cancel')"
+		onMouseUp=		"javascript:document.GynExam1.reset();
+						 javascript:Show('../../Pictures/CancelMouseOn.jpg','Cancel')">
+		<img name="Cancel" src="../../Pictures/CancelMouseOut.jpg" BORDER=0 alt="CANCEL"></A>
+		</TD>
+		
+		<TD WIDTH=2%>
+			&nbsp;	
+		</TD>
+
+		<TD WIDTH=10%>
+		<A HREF="javascript:Jump('GynecologicalExam2.html')" 
+		onMouseOver=	"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')"
+		onMouseOut=	"javascript:Show('../../Pictures/NextMouseOut.jpg','Next')"
+		onMouseDown=	"javascript:Show('../../Pictures/NextMouseClicked.jpg','Next')"
+		onMouseUp=		"javascript:Show('../../Pictures/NextMouseOn.jpg','Next')">
+		<img name="Next" src="../../Pictures/NextMouseOut.jpg" border="0" alt="NEXT PAGE"></A>
+		</TD>
+
+		<TD WIDTH=33% VALIGN=MIDDLE ALIGN=RIGHT>
+		<FONT COLOR="yellow" STYLE="font-family:'Book Antiqua'; font-size:11px;">
+					EXAM -- 1 --
+		</FONT>
+		</TD>
+
+
+	</TABLE>
+
+
+</TD>
+
+</FORM>
+
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>
+

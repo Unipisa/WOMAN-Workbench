@@ -1,0 +1,440 @@
+<html>
+
+<head>
+<meta http-equiv="Content-TYPE"
+content="text/html; charset=iso-8859-1">
+<title>Woman-Insert</title>
+
+<script language="JavaScript">
+<!--
+
+function Jump(url)
+{
+  if (url == 'backward')
+    history.back(1);
+  else {
+		if (history.forward(1))
+    		history.forward(1);
+  		else parent.FolderFrame.location.href = url
+		}
+};
+
+	function setfocus() {
+	document.GeneralVisit.Month.focus();
+	return;
+	}; 
+
+	function Show(Picture,PictName) {
+	document.images[PictName].src=Picture;
+	};
+
+//-->
+</Script>
+
+</head>
+
+<body onLoad="setfocus()" bgcolor="#8C8C8C" BACKGROUND="../../Pictures/Stampati.jpg" 
+		text="#000000" link="blue" vlink="purple" alink="red"
+ 		style="font-family:'Courier New'; margin-top:-1px; margin-right:0px;
+		margin-bottom:-1px; margin-left:0px;">
+
+<DIV ALIGN="center">
+
+<TABLE BACKGROUND="../../Pictures/Denim.jpg" 
+		border="6"  cellpadding="0" cellspacing="0" WIDTH="674" HEIGHT="100%"
+		bordercolordark="#D1D1D1" bordercolorlight="#D1D1D1" >
+
+<TD WIDTH="90%" height="100%" 
+		bordercolordark="#8C8C8C" bordercolorlight="#8C8C8C" 
+		VALIGN="MIDDLE" ALIGN="CENTER">
+
+<FORM ACTION="http://YourCGIScript" METHOD="POST" NAME="GeneralVisit">
+
+
+<!- ***************************************************** ->
+<!- *                          INTESTAZIONE ->                         
+<!- ***************************************************** ->
+
+
+<CENTER>
+	<FONT COLOR="#FF43FD" SIZE="4" FACE="Book Antiqua">
+		WOMAN CLINICAL FILES
+	</FONT>
+	<FONT COLOR="#006666" SIZE="4" FACE="Book Antiqua">
+	- <U>General Visit</U>
+	<BR>
+	<BR>
+	</FONT>
+</CENTER>
+
+
+<!- ***************************************************** ->
+<!- *                          TABELLA ->                      
+<!- ***************************************************** ->
+
+<DIV ALIGN="center">
+	<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="657">
+	<TR>
+	<TD WIDTH="657">
+		<DIV ALIGN="center">
+		<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+       	<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				MENARCHE
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Month"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Day"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+
+				<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Year"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				MENSTRUAL CYCLE
+				</FONT>
+				</DIV>
+			</TD>
+          <TD>
+				<DIV ALIGN="center">
+				<SELECT NAME="Cycle_at_30_Years"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="Regular">REGULAR</OPTION>
+					<OPTION VALUE="Irregular">IRREGULAR</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				DYSMENORRHEA
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<SELECT NAME="Dysmenorrhea" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+				</DIV>
+			</TD>
+			</TR>
+		</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				PARITY
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="4" MAXLENGTH="4" NAME="Parity"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				BREAST FEEDING (MONTHS)
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Breast_Feeding"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				SMOKING YEARS
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Smoking_Years"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				N° CIGARETTES/DAY
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="N°_Cigarette_/_Day"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+
+			</TR>
+			</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				ALCOHOL
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<SELECT NAME="Cod_Alcohol" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				COFFEE
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<SELECT NAME="Cod_Coffee" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				PILL
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<SELECT NAME="Cod_Pill" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="NotAtAll">NOT AT ALL</OPTION>
+					<OPTION VALUE="ALittle">A LITTLE</OPTION>
+					<OPTION VALUE="QuiteABite">QUITE A BITE</OPTION>
+					<OPTION VALUE="Extremely">EXTREMELY</OPTION>
+				</SELECT>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				YEARS
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="2" MAXLENGTH="2" NAME="Years"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+			</TABLE>
+		</DIV>
+
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				PHYSICAL ACTIVITY
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<SELECT NAME="Physical_Activity" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				HOURS x WEEK
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="NUMBER" SIZE="2" MAXLENGTH="2" NAME="P.A_Hours/Week"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				CONSTIPATION
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<SELECT NAME="Constipation" 
+				STYLE="font-family:'Courier New'; font-size:13px;">
+					<OPTION VALUE="Yes">YES</OPTION>
+					<OPTION VALUE="No">NO</OPTION>
+				</SELECT>
+			</TD>
+			</TR>
+          	</TABLE>
+       </DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				OTHER PROBLEMS
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="text" SIZE="50" MAXLENGTH="50" NAME="Other_Problems"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD> 
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				WEIGHT
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Weight"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			<TD> 
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				HEIGHT
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Height"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+			</TR>
+          	</TABLE>
+		</DIV>
+		<DIV ALIGN="center">
+			<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+			<TR>
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				BMI - BLOOD PRESSURE MAX
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Blood_Pressure_MAX"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+
+			<TD>
+				<DIV ALIGN="center">
+				<FONT STYLE="font-family:'Courier New'; font-size:13px;">
+				BMI - BLOOD PRESSURE MIN
+				</FONT>
+				</DIV>
+			</TD>
+			<TD>
+				<DIV ALIGN="center">
+				<INPUT TYPE="number" SIZE="3" MAXLENGTH="3" NAME="Blood_Pressure_MIN"
+				STYLE="font-family:'Courier New'; font-size:13px;">
+				</DIV>
+			</TD>
+
+			</TR>
+			</TABLE>
+		</DIV>
+
+		</TD>
+		</TR>
+	</TABLE>
+</DIV>
+
+<HR>
+
+   	<CENTER>
+	<TABLE BORDER="0" cellpadding="4" CELLSPACING="0">
+	<TR>
+		<TD>
+		<A HREF="javascript:Genera1Visit1.submit()"
+		onMouseOver=	"javascript:Show('../../Pictures/SubmitMouseOn.gif','Submit')"
+		onMouseOut=	"javascript:Show('../../Pictures/SubmitMouseOut.gif','Submit')"
+		onMouseDown=	"javascript:Show('../../Pictures/SubmitMouseClicked.gif','Submit')"
+		onMouseUp=		"javascript:GeneralVisit1.submit();
+						javascript:Show('../../Pictures/SubmitMouseOn.gif','Submit')">
+		<img name="Submit" src="../../Pictures/SubmitMouseOut.gif" BORDER="0" alt="SUBMIT"></A>
+		</TD>
+		<TD>
+		<A HREF="#"
+		onMouseOver=	"javascript:Show('../../Pictures/CancelMouseOn.gif','Cancel')"
+		onMouseOut=	"javascript:Show('../../Pictures/CancelMouseOut.gif','Cancel')"
+		onMouseDown=	"javascript:Show('../../Pictures/CancelMouseClicked.gif','Cancel')"
+		onMouseUp="reset('Genera1Visit1'); javascript:Show('../../Pictures/CancelMouseOn.gif','Cancel')">
+		<img name="Cancel" src="../../Pictures/CancelMouseOut.gif" BORDER="0" alt="CANCEL"></A>			
+		</TD>
+		<TD>
+		<A HREF="javascript:Jump('GeneralVisit2.html')" 
+		onMouseOver=	"javascript:Show('../../Pictures/NextMouseOn.gif','Next')"
+		onMouseOut=	"javascript:Show('../../Pictures/NextMouseOut.gif','Next')"
+		onMouseDown=	"javascript:Show('../../Pictures/NextMouseClicked.gif','Next')"
+		onMouseUp=		"javascript:Show('../../Pictures/NextMouseOn.gif','Next')">
+		<img name="Next" src="../../Pictures/NextMouseOut.gif" border="0" alt="NEXT PAGE"></A>
+		</TD>
+	</TR>
+	</TABLE>
+	</CENTER>
+
+
+</FORM>
+</TD>
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>
+
